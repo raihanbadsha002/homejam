@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+/* Header component******** */
+.header__container{
+    height:790px;
+    background-image: url(././images/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+/* Counter component************ */
+.round__counter{
+    border: 1px solid;
+    width: 66%;
+    height: 117%;
+    padding: 30px;
+}
+.shows__container{
+    background-color:#0a0b1a;
+}
+.card{
+    background-color:#111229 !important;
+    box-shadow: 11px -10px 0px -2px #0a1772;
+    border-radius: 10px !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.after__border{
+   position: relative; 
 }
+.after__border:after{
+    position: absolute;
+    content: '';
+    background-color: #0c1eac;
+    width: 50px;
+    height: 5px;
+    top: 45px;
+    left: 0;
+    border-radius: 6px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*// X-Small devices (portrait phones, less than 576px)  */
+@media (max-width: 575.98px) { 
+.header__text h1{
+    font-size: 2.8rem !important;
 }
-
-.App-link {
-  color: #61dafb;
+.header__text p{
+    font-size: .8rem !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.round__counter {
+    width: 80%;
+    height: 115%;
+    padding: 19px;
 }
+.coustom__text{
+    font-size: .8rem !important;
+}
+ }
